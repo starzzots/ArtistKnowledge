@@ -1,9 +1,10 @@
 require "sinatra"
 require "sinatra/reloader"
+require 'rspotify'
+
+RSpotify.authenticate(ENV.fetch('SPOTIFY_CLIENT_ID'), ENV.fetch('SPOTIFY_SERCRET_ID'))
 
 get("/") do
-  "
-  <h1>Welcome to your Sinatra App!</h1>
-  <p>Define some routes in app.rb</p>
-  "
+  @artist = RSpotify::Artist.search('Artist Name').first
+  erb(:homepage)
 end

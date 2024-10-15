@@ -1,18 +1,12 @@
-# sinatra-template
+# Artist Knowledge
 
-Use this repository to create new Sinatra apps. 
+## Overview
 
-Optionally, to use `ActiveRecord` for database operations, add to the `app.rb`:
+Artist Knowledge is a project designed to provide insights and information about various artists, their works, and related knowledge. This repository serves as a resource for art enthusiasts, researchers, and anyone interested in exploring the world of art.
 
-```ruby
-require "sinatra/activerecord"
-```
+## Features
 
-And in the `config/environment.rb` file add this code block:
-
-```ruby
-configure do
-  # setup a database connection
-  set(:database, { adapter: "sqlite3", database: "db/development.sqlite3" })
-end
-```
+- Comprehensive database of artists and their works
+- Search functionality for easy access to artist information
+- Detailed artist profiles including biography, notable works, and influences
+- User-friendly interface for a seamless experience

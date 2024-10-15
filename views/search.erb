@@ -1,0 +1,39 @@
+<div class="container">
+    <header>
+        <h1>Spotify Artist Search</h1>
+        <nav>
+            <a href="/">Back to Search</a>
+        </nav>
+  </header>
+  <% if @artist %>
+    <h2><%= @artist.name %></h2>
+    <p><strong>Genres:</strong> <%= @artist.genres.join(', ') %></p>
+    <p><strong>Popularity:</strong> <%= @artist.popularity %></p>
+    <p><a href="<%= @artist.external_urls['spotify'] %>" target="_blank">Listen on Spotify</a></p>
+
+    <h3>Top Tracks:</h3>
+    <ul>
+      <% @top_tracks.each do |track| %>
+        <li>
+          <strong><%= track.name %></strong>
+          <p>Album: <%= track.album.name %></p>
+          <p><a href="<%= track.external_urls['spotify'] %>" target="_blank">Listen on Spotify</a></p>
+        </li>
+      <% end %>
+    </ul>
+
+    <h3>Albums:</h3>
+    <ul>
+      <% @albums.each do |album| %>
+        <li>
+          <strong><%= album.name %></strong> (<%= album.release_date %>)
+          <p><a href="<%= album.external_urls['spotify'] %>" target="_blank">View Album</a></p>
+        </li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p><%= @error %></p>
+  <% end %>
+
+  <a href="/">Back to search</a>
+</div>

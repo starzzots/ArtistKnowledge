@@ -39,6 +39,7 @@ GEM
     concurrent-ruby (1.2.2)
     crack (0.4.5)
       rexml
+    csv (3.3.0)
     debug_inspector (1.1.0)
     diff-lcs (1.5.0)
     domain_name (0.6.20240107)
@@ -64,6 +65,10 @@ GEM
     hashie (5.0.0)
     http-cookie (1.0.7)
       domain_name (~> 0.5)
+    httparty (0.22.0)
+      csv
+      mini_mime (>= 1.0.0)
+      multi_xml (>= 0.5.2)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     jwt (2.9.3)
@@ -210,6 +215,7 @@ DEPENDENCIES
   capybara
   draft_matchers
   grade_runner
+  httparty
   i18n
   pry
   puma (~> 5.0)

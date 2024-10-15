@@ -6,7 +6,7 @@ Artist Knowledge is a project designed to provide insights and information about
 
 ## Features
 
-- Comprehensive database of artists and their works
+Comprehensive database of artists and their works
 - Search functionality for easy access to artist information
 - Detailed artist profiles including biography, notable works, and influences
 - User-friendly interface for a seamless experience

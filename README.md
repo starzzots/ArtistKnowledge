@@ -10,3 +10,8 @@ Artist Knowledge is a project designed to provide insights and information about
 - Search functionality for easy access to artist information
 - Detailed artist profiles including biography, notable works, and influences
 - User-friendly interface for a seamless experience
+
+##Terminal-bash running locally
+-bin/server
+-port 3000
+-tab over to ports and in the 3000 port will be a link to the web url locally

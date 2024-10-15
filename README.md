@@ -11,8 +11,11 @@ Comprehensive database of artists and their works
 - Detailed artist profiles including biography, notable works, and influences
 - User-friendly interface for a seamless experience
 
-##Terminal-bash running locally
--bin/server
--port 3000
--tab over to ports and in the 3000 port will be a link to the web url locally
--will reformat when I get home moblie is weird 😅
+## Terminal
+
+- run bin/server
+- port 3000
+- tab over to ports and in the 3000 port will be a link to the web url locally
+- if it doesnt run after bin/server try - bundle in terminal first then bin/server
+
+

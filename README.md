@@ -13,9 +13,9 @@ Comprehensive database of artists and their works
 
 ## Terminal
 
-- run bin/server
-- port 3000
-- tab over to ports and in the 3000 port will be a link to the web url locally
-- if it doesnt run after bin/server try - bundle in terminal first then bin/server
+- Run "bin/server"
+- Port 3000
+- Tab over to ports and in the 3000 port will be a link to the web url locally
+- If it doesnt run after bin/server try -running "bundle" in terminal first then "bin/server"
 
 

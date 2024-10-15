@@ -15,3 +15,4 @@ Comprehensive database of artists and their works
 -bin/server
 -port 3000
 -tab over to ports and in the 3000 port will be a link to the web url locally
+-will reformate when I get home model is weird 😅
